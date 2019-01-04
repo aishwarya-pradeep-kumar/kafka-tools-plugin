@@ -1,0 +1,30 @@
+<idea-plugin>
+  <version>1.0-SNAPSHOT</version>
+  <change-notes>
+      Add change notes here.&lt;br&gt;
+      &lt;em&gt;most HTML tags may be used&lt;/em&gt;</change-notes>
+  <idea-version since-build="183.4886" until-build="183.*"/>
+  <id>com.jetbrains.kafka-tool</id>
+  <name>Kafka Tool</name>
+  <vendor email="ash26389@gmail.com" url="http://www.express-scripts.com">Express Scripts</vendor>
+  <description>The kafka tool plugin supports the producing and consuming of kafka messages.&lt;br&gt;
+        Features:
+        &lt;ul&gt;
+        &lt;li&gt;Avro Model Project Dependency Scanner&lt;/li&gt;
+        &lt;li&gt;Kafka Producer&lt;/li&gt;
+        &lt;li&gt;Kafka Producer History&lt;/li&gt;
+        &lt;li&gt;String Serialization&lt;/li&gt;
+        &lt;li&gt;Kafka Avro Serialization&lt;/li&gt;
+        &lt;/ul&gt;</description>
+  <extensions defaultExtensionNs="com.intellij">
+    <projectService serviceImplementation="com.jetbrains.kafka.tool.service.shared.DefaultJsonToAvroConverter"/>
+    <projectService serviceImplementation="com.jetbrains.kafka.tool.service.AvroClassScannerImpl"/>
+    <projectService serviceImplementation="com.jetbrains.kafka.tool.service.ConfluentServiceImpl"/>
+    <projectService serviceImplementation="com.jetbrains.kafka.tool.service.KafkaProducerProxy"/>
+    <projectService serviceImplementation="com.jetbrains.kafka.tool.service.KafkaToolSerializerService"/>
+    <applicationService serviceImplementation="com.jetbrains.kafka.tool.service.KafkaToolPersistentStateComponent"/>
+    <applicationService serviceImplementation="com.jetbrains.kafka.tool.service.KafkaToolProducerCache"/>
+    <toolWindow id="kafka tool" icon="/icons/kafka-icon_13x13.png" anchor="right" secondary="false" factoryClass="com.jetbrains.kafka.tool.ui.KafkaToolToolWindow"/>
+  </extensions>
+  <actions/>
+</idea-plugin>

@@ -1,0 +1,12 @@
+/Header Record For PersistentHashMapValueStoragekafka.streams.avro.serdecommon.configkafka.avro.serializercom.fasterxml.jackson.core!com.fasterxml.jackson.databindkafka.schema.registry.clientlz4.javakafka.clientssnappy.java	slf4j.api	slf4j.apiconnect.apikafka.streamsconnect.json
+rocksdbjniavrojackson.core.asljackson.mapper.asl	paranamercommons.compressxzavro.maven.pluginmaven.plugin.apimaven.projectmaven.settingsmaven.profilemaven.modelmaven.artifact.managermaven.repository.metadatawagon.provider.apimaven.plugin.registryplexus.interpolationplexus.container.defaultmaven.artifactplexus.utilsclassworldsfile.managementmaven.shared.ioavro.compilercommons.langvelocitycommons.collections	joda.timescala.libraryzkclient	zookeeperjlinenettyjavax.ws.rs.apijetty.serverjavax.servlet.api
+jetty.http
+jetty.utiljetty.iojetty.servletjetty.security jersey.container.servlet.corejavax.injectjersey.commonjavax.annotation.apijersey.guava
+hk2.api	hk2.utilsaopalliance.repackagedhk2.locatorosgi.resource.locatorjersey.serverjersey.clientjersey.media.jaxbvalidation.apivalidation.apijersey.media.json.jacksonjersey.entity.filteringjackson.jaxrs.basejackson.jaxrs.json.provider"jackson.module.jaxb.annotations# com.fasterxml.jackson.annotationalgebird.core.2.11JavaEWAHalgebra.2.11cats.kernel.2.11scala.reflect
+chill.2.11
+chill.javakryo.shaded	minlogjunithamcrest.coreassertj.coremockito.core
+byte.buddybyte.buddy.agent	objenesis
+kafka.2.11jopt.simplemetrics.core
+kafka.2.11kafka.clientskafka.streamscurator.test	javassistcommons.mathguavakafka.schema.registryjersey.bean.validationhibernate.validatorjboss.logging	classmatejavax.el.apijavax.el
+rest.utilscommon.metricsjersey.container.servlet	jetty.jmxjetty.servletsjetty.continuation
+jetty.jaaskafka.schema.registryscalactic.2.11scalatest.2.11scala.xml.2.11common.utilsslf4j.log4j12log4j

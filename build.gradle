@@ -1,0 +1,35 @@
+plugins {
+    id 'java'
+    id 'org.jetbrains.intellij' version '0.3.12'
+    id 'net.ltgt.apt' version '0.10'
+}
+
+group 'com.jetbrains'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile 'org.projectlombok:lombok:1.18.4'
+    compile 'com.google.inject:guice:4.0'
+    apt 'org.projectlombok:lombok:1.18.4'
+    compile 'org.apache.kafka:kafka_2.12:2.1.0'
+    compile 'org.apache.avro:avro:1.8.2'
+    compile 'org.easytesting:fest-util:1.2.5'
+    compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.11.1'
+    compile files('libs/kafka-avro-serializer-5.1.0.jar')
+}
+
+intellij {
+    version '2018.3.2'
+}
+patchPluginXml {
+    changeNotes """
+      Add change notes here.<br>
+      <em>most HTML tags may be used</em>"""
+}
