@@ -1,7 +1,6 @@
 plugins {
     id 'java'
     id 'org.jetbrains.intellij' version '0.3.12'
-    id 'net.ltgt.apt' version '0.10'
 }
 
 group 'com.jetbrains'
@@ -15,14 +14,19 @@ repositories {
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
-    compile 'org.projectlombok:lombok:1.18.4'
-    compile 'com.google.inject:guice:4.0'
-    apt 'org.projectlombok:lombok:1.18.4'
-    compile 'org.apache.kafka:kafka_2.12:2.1.0'
-    compile 'org.apache.avro:avro:1.8.2'
-    compile 'org.easytesting:fest-util:1.2.5'
-    compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.11.1'
+    compile ('org.projectlombok:lombok:1.18.4')
+    compile ('com.google.inject:guice:4.0')
+    compile ('org.projectlombok:lombok:1.18.4') 
+    compile ('org.apache.kafka:kafka_2.12:2.1.0')
+    compile ('org.apache.avro:avro:1.8.2') 
+    compile ('org.easytesting:fest-util:1.2.5') 
     compile files('libs/kafka-avro-serializer-5.1.0.jar')
+}
+
+configurations.all {
+    exclude group: "org.slf4j", module: "slf4j-log4j12"
+    exclude group: "org.slf4j", module: "slf4j-api"
+    exclude group: "log4j", module: "log4j"
 }
 
 intellij {

@@ -3,7 +3,7 @@
     <location key="FileChooserDialogImpl.0.0.1366.768" x="502" y="117" />
     <location key="WELCOME_SCREEN.0.0.1366.768" x="715" y="362" />
     <location key="com.intellij.ide.util.TipDialog.0.0.1366.768" x="318" y="211" />
-    <location key="IDE.errors.dialog.0.0.1366.768" x="303" y="114" />
+    <location key="IDE.errors.dialog.0.0.1366.768" x="303" y="117" />
     <size key="FileChooserDialogImpl.0.0.1366.768" width="424" height="482" />
     <size key="IDE.errors.dialog.0.0.1366.768" width="824" height="545" />
   </component>

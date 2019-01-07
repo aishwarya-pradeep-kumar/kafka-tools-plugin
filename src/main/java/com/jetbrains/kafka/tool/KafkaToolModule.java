@@ -9,9 +9,9 @@ import com.jetbrains.kafka.tool.service.*;
 import com.jetbrains.kafka.tool.service.shared.DefaultJsonToAvroConverter;
 import com.jetbrains.kafka.tool.ui.KafkaProducerComponent;
 import com.jetbrains.kafka.tool.ui.KafkaSettingsComponent;
-import lombok.extern.log4j.Log4j2;
+import groovy.util.logging.Slf4j;
 
-@Log4j2
+@Slf4j
 public class KafkaToolModule extends AbstractModule {
 
     protected static final Supplier<Injector> injector = Suppliers.memoize(() -> {

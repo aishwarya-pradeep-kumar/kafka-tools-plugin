@@ -1,7 +1,7 @@
 <idea-plugin>
     <id>com.jetbrains.kafka-tool</id>
     <name>Kafka Tool</name>
-    <vendor email="ash26389@gmail.com" url="http://www.express-scripts.com">Express Scripts</vendor>
+    <vendor email="ash26389@gmail.com" url="">Aishwarya Kumar</vendor>
 
     <description>The kafka tool plugin supports the producing and consuming of kafka messages.&lt;br&gt;
         Features:
